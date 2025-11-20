@@ -1,0 +1,59 @@
+@use '@/styles/index.scss' as *;
+
+.footer {
+  padding: $spacing-xl $spacing-lg;
+  background-color: $bg-secondary;
+  border-top: 1px solid $white-050;
+}
+
+.footerContainer {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.copyright {
+  color: $text-secondary;
+  font-size: $font-size-sm;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $spacing-lg;
+
+  @include tablet {
+    justify-content: flex-end;
+  }
+}
+
+.link {
+  color: $text-secondary;
+  font-size: $font-size-sm;
+  transition: color $transition-base;
+  text-decoration: none;
+
+  &:hover {
+    color: $text-primary;
+  }
+
+  &:focus-visible {
+    border-radius: $border-radius-sm;
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+}
