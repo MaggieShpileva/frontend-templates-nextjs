@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Автоматически форматируем файлы перед коммитом
+npm run format
+
+# Проверяем CSS/SCSS
+npm run lint:css

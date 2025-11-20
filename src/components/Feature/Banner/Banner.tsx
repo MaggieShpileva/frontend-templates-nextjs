@@ -9,6 +9,17 @@ export const Banner = () => {
       <Title tag="h1" variant="bold" className={styles.bannerTitle}>
         Шаблон проекта на Next.js
       </Title>
+
+
+
+
+
+
+
+
+
+
+      
     </section>
   );
 };

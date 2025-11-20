@@ -1,5 +1,6 @@
-import { FC, ReactNode, ButtonHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes, FC, ReactNode } from 'react';
 import clsx from 'clsx';
+
 import styles from './Button.module.scss';
 
 type ButtonProps = {
@@ -36,4 +37,3 @@ export const Button: FC<ButtonProps> = ({
     </button>
   );
 };
-
